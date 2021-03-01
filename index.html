@@ -3,10 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#222">
-    <meta name="description" content="Hoja de experiencia de José">
+    <meta name="theme-color" content="#2196f3">
+    <meta name="description" content="Documentacion de proyecto PlcNode">
+    <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="shortcut icon" type="image/png" href="./src/icon.png">
+    <link rel="apple-touch-icon" href="./src/icon.png">
+    <link rel="apple-touch-startup-image" href="./src/icon.png">
+    <link rel="manifest" href="./manifest.json">
     <meta name="author" content="José Rosendo Soto Reza">
-    <link rel="stylesheet" href="https://josereza.github.io/src/bootstrap.css">
+    <link rel="stylesheet" href="src/bootstrap.css">
     <link rel="icon" href="src/plc_node.png">
     <title>PlcNode</title>
 
@@ -40,65 +48,42 @@
                   <h1 >Proyecto orientado a la cuarta revolucion industrial</h1>
                   <br>
                   <h1 >Impulsando la tecnología IIOT</h1>
-                </b>
+                </br>
                 <br>
-                <a class="btn btn-warning btn-lg" href="https://drive.google.com/file/d/1BdQ3BOU-ysffamqjHTPBjf2OLPSFm4Tt/view?usp=sharing" role="button">Ver documentación</a>
-                <br> 
           </div>
-            
-
-              <div class="mx-auto card text-white bg-primary mb-3" style="width: 80%;">
+                  <br>
+                  <br>
+                  <div class="mx-auto card text-white bg-primary mb-3" style="width: 80%;">
                 <div class="card-body">
                   <h4 class="card-title bg-warning text-center">¿Que es Plc Node?</h4>
                     <p class="card-title text-center">
                       
                     
-                    PLC NODE es un modulo análogo a al funcionamiento de un controlador lógico programable que se considera como un nodo
+                    PLC NODE es un módulo análogo a al funcionamiento de un controlador lógico programable que se considera como un nodo
                     donde se concentra información, se controla y optimiza las acciones de un proceso
                     industrial por medio de la implementación de internet y está orientado al procesamiento
                     de entradas y salidas donde en las entradas se utilizan sensores y en las salidas se
                     utilizan actuadores. 
                     <br>
                     <br>
-                    El proyecto cuenta con un software emergente que implementa
-                    tecnología de internet de las cosas. El software es un entorno de programación
-                    integrado que es capaz de implementar instrucciones a bloques, donde cada bloque
-                    tiene funcionalidades diferentes, dando la capacidad a PLC NODE de conectar
-                    servicios externos, creación de interfaces de usuario, conexión a una gran variedad de
-                    protocolos de comunicación, procesamiento de señales y algunos módulos de
-                    inteligencia artificial.
-          
-                    <br>
                     </p>
                 </div>
               </div>
-                <br>
-
-                <div style="width: 80%;" class="border border-primary bg-dark mx-auto text-center align-items-center p-6 text-white">
-                  <h2 class="bg-primary">Prueba de funcionamiento</h2>
-                  <div class="text-center">
-                  <iframe style="width: 80%;"  src="https://www.youtube.com/embed/nX1A2xBffW8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-                 </div> 
-                </div>
-
-                <div class="text-center">
-                  <img height="300" src="https://josereza.github.io/proyects/plc_node/src/PlcNodeV4.4.png">
-                  </div>
-
-                  <div style="width: 80%;" class="mx-auto">
-                    <ul class="nav nav-tabs">
+                  <br>
+                  <div style="width: 80%;" class="mx-auto text-center">
+                    <ul class="nav nav-tabs bg-primary ">
                       <li class="nav-item">
-                        <a class="nav-link active" id="descripcion">Descripcion</a>
+                        <a class="nav-link text-white" id="descripcion">Descripcion</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" id="especificaciones">Especificaciones</a>
+                        <a class="nav-link text-white" id="especificaciones">Especificaciones</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" id="software">Software</a>
+                        <a class="nav-link text-white" id="software">Software</a>
                       </li>
                     </ul>
                     <br>
-                    <div id="contenido">
+                    <div id="contenido" class="text-center">
                       content
                     </div>
                     <script>
@@ -106,16 +91,10 @@
                       var descripcion = document.getElementById("descripcion");
                       var especificaciones = document.getElementById("especificaciones");
                       var software = document.getElementById("software");
-                      contenido.innerHTML = `Modulo analogo a un controlador logico programable 
-                        de 6 entradas y 6 salidas, capaz de conexion alambrica e inalambrica, indicadores de estado
-                        por cada entrada y cada salida.`;
-                      descripcion.addEventListener('click',function(){
-                        contenido.innerHTML = `Modulo analogo a un controlador logico programable 
-                        de 6 entradas y 6 salidas, capaz de conexion alambrica e inalambrica, indicadores de estado
-                        por cada entrada y cada salida.`;
-                      });
-                      especificaciones.addEventListener('click', function(){
-                        contenido.innerHTML = `
+                      contenido.innerHTML = `
+                        <img src="src/PlcNodeV4.4Caracteristicas.png" style="width:75%;">
+                        <br>
+                        <br>
                         Microcontrolador IOT
                         <br>
                         Alimentación directa a 110VAC.
@@ -139,19 +118,96 @@
                              &nbsp;&nbsp;&nbsp;&#8226;Inalámbrica
                             <br>
                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;Protocolo Wifi en conjunto con Websockets.
+                          `;
+                      descripcion.addEventListener('click',function(){
+                        contenido.innerHTML = `
+                        <img src="src/PlcNodeV4.4.png" style="width:75%;">
+                        <br>
+                        <br>
+                        Módulo analógo a un controlador lógico programable 
+                        de 6 entradas y 6 salidas, capaz de conexion alámbrica e inalámbrica, indicadores de estado
+                        por cada entrada y cada salida.`;
+                      });
+                      especificaciones.addEventListener('click', function(){
+                        contenido.innerHTML = `
+                        <img src="src/PlcNodeV4.4Caracteristicas.png" style="width:75%;">
+                        <br>
+                        <br>
+                        Microcontrolador IOT
+                        <br>
+                        Alimentación directa a 110VAC.
+                        <br>
+                        Entradas/Salidas
+                        <br>
+                           &nbsp;&nbsp;&nbsp;&#8226; 6 entradas analógas adaptadas a 24 VDC
+                           <br>
+                           &nbsp;&nbsp;&nbsp;&#8226; 6 salidas adaptadas a 24 VDC
+                           <br>
+                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;4 salidas digitales
+                              <br>
+                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;2 salidas analógas.
+                              <br>
+                         Comunicación.
+                        <br>
+                             &nbsp;&nbsp;&nbsp;&#8226;Alámbrica.
+                            <br>
+                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;Protocolo Usb 
+                              <br>
+                             &nbsp;&nbsp;&nbsp;&#8226;Inalámbrica
+                            <br>
+                               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;Protocolo Wifi en conjunto con Websockets.
                           
                         `;
-                        software.addEventListener('click', function(){
-                          descripcion.innerHTML = `
-                          <a href="">Software</a>
-                          `
-                        });
                       });
+                        software.addEventListener('click', function(){
+                          contenido.innerHTML = `
+                          <img src="src/PlcNodeSoftwareMain.png" style="width:75%;">
+                          <br>
+                          <img src="src/PlcNodeSoftwareHardwareProgramming.png" style="width:75%;">
+                          <br>
+                          <img src="src/PlcNodeSoftwareSoftwareProgramming.png" style="width:75%;">
+                          <br>
+                          <img src="src/PlcNodeSoftwareUserInterface.png" style="width:75%;">
+                          <br>
+                          <br>
+                          <br>
+                          El proyecto cuenta con un software emergente que implementa
+                          tecnología de internet de las cosas. El software es un entorno de programación
+                          integrado que es capaz de implementar instrucciones a bloques, donde cada bloque
+                          tiene funcionalidades diferentes, dando la capacidad a PLC NODE de conectar
+                          servicios externos, creación de interfaces de usuario, conexión a una gran variedad de
+                          protocolos de comunicación, procesamiento de señales y algunos módulos de
+                          inteligencia artificial.
+                          <br>
+                          <br>
+                          <div class="bg-primary text-white">Descarga</div>
+                          <br>
+                          <img src="src/PlcNodeSoftware.png" width="75">
+                          <a href="https://drive.google.com/file/d/17BLBmM8innxE07ZbkRcGzrtRxcJ1Hryr/view?usp=sharing">PlcNodeSoftware Windows 10 64 bits</a>
+                          `;
+                        });
                     </script>
                   </div>
+    
+                   <div class="text-center">
+                    <img style="width:75%;" src="src/PlcNodeV4.4Logo.png">
+                   </div>
+    
+                  <br>
+                  <br>
+                  <br>
 
-                  <br>
-                  <br>
+                <br>
+
+                <div style="width: 80%;" class="border border-primary bg-dark mx-auto text-center align-items-center p-6 text-white">
+                  <h2 class="bg-primary">Prueba de funcionamiento</h2>
+                  <div class="text-center">
+                  <iframe style="width: 80%;"  src="https://www.youtube.com/embed/nX1A2xBffW8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                 </div> 
+                </div>
+
+                <br>
+                <br>
 
                 <div class="mx-auto card text-white bg-primary mb-3" style="width: 80%;">
                   <div class="card-body">
@@ -172,8 +228,8 @@
                 <br>
               <br>
             
-              <div style="width: 80%;" class="border border-primary bg-dark mx-auto text-center align-items-center p-6 text-white">
-                <h2 class="bg-primary">Software</h2>
+              <div style="width: 80%;" class="border border-primary mx-auto text-center align-items-center p-6 text-white">
+                <h2 class="bg-primary">Soporte</h2>
                 <br>
                   <img src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Node-red-icon.png" width="200" height="200">
                     <br> <br>
@@ -198,5 +254,4 @@
                 
     
   </body>
-    <script src="https://josereza.github.io/buttons.js"></script>
 </html>
