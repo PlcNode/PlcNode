@@ -83,6 +83,7 @@
                       </li>
                     </ul>
                     <br>
+                    <br>
                     <div id="contenido">
                       content
                     </div>
@@ -94,50 +95,102 @@
                       var especificaciones = document.getElementById("especificaciones");
                       var software = document.getElementById("software");
                       contenido.innerHTML = `
-<tr>
-      <td class="bg-primary">Column content</td>
-      <td class="bg-dark">Column  content</td>
-</tr>
                         <img src="src/PlcNodeV4.4Caracteristicas.png" style="width:75%;">
                         <br>
                         <br>
-                        Microcontrolador IOT
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&#8226; CPU: Xtensa dual-core (or single-core) 32-bit LX6 microprocessor
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&#8226; Frecuencia: 160 o 240 MHz
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&#8226; Memoria RAM: 520 KiB SRAM
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&#8226; Memoria ROM: 4 MB
-                        <br>
-                        Alimentación: 110/220VAC consumo de 0.1A
-                        <br>
-                        Entradas/Salidas:
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&#8226; 6 entradas analógas adaptadas a leer de 0 a 24 VDC.
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&#8226; Resolución: 2^10 = 1024 bits, 0.0234v por cada cambio de bit
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&#8226; 6 salidas adaptadas a 24 VDC
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;4 salidas digitales a relevador electromécanico de 0 a 24Vdc y 0 a 220Vac con capacidad a 10A
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;2 salidas analógas a transistor de 0 a 24Vdc a 3A
-                        <br>
-                        Comunicación.
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&#8226;Alámbrica.
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;Conector micro Usb  
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;Comunicación por medio de protocolo Uart  
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&#8226;Inalámbrica
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;Wi-Fi: 802.11 b/g/n
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wifi en conjunto con protocolo Websockets de 5 ms - 50ms de latencia.
+
+                        <table class="rounded text-white" style="width: 80%;">
+                          <tr>
+                                <td class="bg-dark p-6 text-center">
+                                  Microcontrolador IOT
+                                </td>
+                                <td class="bg-primary p-6">
+                                  <br>
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&#8226; CPU: Xtensa dual-core (or single-core) 32-bit LX6 microprocessor
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&#8226; Frecuencia: 160 o 240 MHz
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&#8226; Memoria RAM: 520 KiB SRAM
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&#8226; Memoria ROM: 4 MB
+                                  <br>
+                                  <br>
+                                </td>
+                          </tr>
+                          <tr>
+                                <td class="bg-dark p-6 text-center">
+                                  Entradas
+                                </td>
+                                <td class="bg-primary p-6">
+                                  <br>
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&#8226; 6 entradas analógas adaptadas a leer de 0 a 24 VDC.
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&#8226; Resolución: 2^10 = 1024 bits, 0.0234v por cada cambio de bit
+                                  <br>
+                                  <br>
+                                </td>
+                          </tr>
+                          <tr>
+                                <td class="bg-dark p-6 text-center">
+                                  Salidas
+                                </td>
+                                <td class="bg-primary p-6">
+                                  <br>
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&#8226; 6 salidas adaptadas a 24 VDC
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;4 salidas digitales a relevador electromécanico de 0 a 24Vdc y 0 a 220Vac con capacidad a 10A
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;2 salidas analógas a transistor de 0 a 24Vdc a 3A
+                                  <br>
+                                  <br>
+                                </td>
+                          </tr>
+                          <tr>
+                                <td class="bg-dark p-6 text-center">
+                                  <br>
+                                  <br>
+                                  Alimentación:
+                                  <br>
+                                  <br>
+                                </td>
+                                <td class="bg-primary p-6">
+                                  <br>
+                                  <br>
+                                  110/220VAC consumo de 0.1A
+                                  <br>
+                                  <br>
+                                </td>
+                          </tr>
+                          <tr>
+                                <td class="bg-dark p-6 text-center">
+                                  <br>
+                                  <br>
+                                  Comunicación.
+                                  <br>
+                                  <br>
+                                </td>
+                                <td class="bg-primary p-6">
+                                  <br>
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&#8226;Alámbrica.
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;Conector micro Usb  
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;Comunicación por medio de protocolo Uart  
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&#8226;Inalámbrica
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;Wi-Fi: 802.11 b/g/n
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wifi en conjunto con protocolo Websockets de 5 ms - 50ms de latencia.
+                                  <br>
+                                  <br>
+                                </td>
+                          </tr>
+                        </table>
                         `;
                       descripcion.addEventListener('click',function(){
                         contenido.innerHTML = `
@@ -153,43 +206,99 @@
                         <img src="src/PlcNodeV4.4Caracteristicas.png" style="width:75%;">
                         <br>
                         <br>
-                        Microcontrolador IOT
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&#8226; CPU: Xtensa dual-core (or single-core) 32-bit LX6 microprocessor
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&#8226; Frecuencia: 160 o 240 MHz
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&#8226; Memoria RAM: 520 KiB SRAM
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&#8226; Memoria ROM: 4 MB
-                        <br>
-                        Alimentación: 110/220VAC consumo de 0.1A
-                        <br>
-                        Entradas/Salidas:
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&#8226; 6 entradas analógas adaptadas a leer de 0 a 24 VDC.
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&#8226; Resolución: 2^10 = 1024 bits, 0.0234v por cada cambio de bit
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&#8226; 6 salidas adaptadas a 24 VDC
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;4 salidas digitales a relevador electromécanico de 0 a 24Vdc y 0 a 220Vac con capacidad a 10A
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;2 salidas analógas a transistor de 0 a 24Vdc a 3A
-                        <br>
-                        Comunicación.
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&#8226;Alámbrica.
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;Conector micro Usb  
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;Comunicación por medio de protocolo Uart  
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&#8226;Inalámbrica
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;Wi-Fi: 802.11 b/g/n
-                        <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wifi en conjunto con protocolo Websockets de 5 ms - 50ms de latencia.
+
+                        <table class="rounded text-white" style="width: 80%;">
+                          <tr>
+                                <td class="bg-dark p-6 text-center">
+                                  Microcontrolador IOT
+                                </td>
+                                <td class="bg-primary p-6">
+                                  <br>
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&#8226; CPU: Xtensa dual-core (or single-core) 32-bit LX6 microprocessor
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&#8226; Frecuencia: 160 o 240 MHz
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&#8226; Memoria RAM: 520 KiB SRAM
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&#8226; Memoria ROM: 4 MB
+                                  <br>
+                                  <br>
+                                </td>
+                          </tr>
+                          <tr>
+                                <td class="bg-dark p-6 text-center">
+                                  Entradas
+                                </td>
+                                <td class="bg-primary p-6">
+                                  <br>
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&#8226; 6 entradas analógas adaptadas a leer de 0 a 24 VDC.
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&#8226; Resolución: 2^10 = 1024 bits, 0.0234v por cada cambio de bit
+                                  <br>
+                                  <br>
+                                </td>
+                          </tr>
+                          <tr>
+                                <td class="bg-dark p-6 text-center">
+                                  Salidas
+                                </td>
+                                <td class="bg-primary p-6">
+                                  <br>
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&#8226; 6 salidas adaptadas a 24 VDC
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;4 salidas digitales a relevador electromécanico de 0 a 24Vdc y 0 a 220Vac con capacidad a 10A
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;2 salidas analógas a transistor de 0 a 24Vdc a 3A
+                                  <br>
+                                  <br>
+                                </td>
+                          </tr>
+                          <tr>
+                                <td class="bg-dark p-6 text-center">
+                                  <br>
+                                  <br>
+                                  Alimentación:
+                                  <br>
+                                  <br>
+                                </td>
+                                <td class="bg-primary p-6">
+                                  <br>
+                                  <br>
+                                  110/220VAC consumo de 0.1A
+                                  <br>
+                                  <br>
+                                </td>
+                          </tr>
+                          <tr>
+                                <td class="bg-dark p-6 text-center">
+                                  <br>
+                                  <br>
+                                  Comunicación.
+                                  <br>
+                                  <br>
+                                </td>
+                                <td class="bg-primary p-6">
+                                  <br>
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&#8226;Alámbrica.
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;Conector micro Usb  
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;Comunicación por medio de protocolo Uart  
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&#8226;Inalámbrica
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#8226;Wi-Fi: 802.11 b/g/n
+                                  <br>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wifi en conjunto con protocolo Websockets de 5 ms - 50ms de latencia.
+                                  <br>
+                                  <br>
+                                </td>
+                          </tr>
+                        </table>
                         `;
                       });
                         software.addEventListener('click', function(){
